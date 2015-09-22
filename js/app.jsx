@@ -1,62 +1,88 @@
-// @preserve: Source code: https://github.com/ChrisJamesC/website-perso
 
 "use strict"
 
-const React = require("react")
+
+const React = require("react");
 const Button = require("react-bootstrap/lib/Button");
 const Panel = require("react-bootstrap/lib/Panel");
 const Jumbotron = require("react-bootstrap/lib/Jumbotron");
-const Row = require("react-bootstrap/lib/Row");
-const Col = require("react-bootstrap/lib/Col");
 // React components
 
 class Header extends React.Component {
    render() {
-      return <Jumbotron bsSize='large' className="semi-transparent">
-         <h1>Christopher Chiche</h1>
-         <h3>Software Engineer</h3>
-         <br/>
-         <form onClick={()=>window.location="/data/ChristopherChiche.pdf"} method="get">
-            <Button type="submit" bsStyle="primary" bsSize="large" block>
-               Get my resume!
-            </Button>
-         </form>
+      const style = {
+         marginTop: 20,
+      }
+      return <Jumbotron style={style} bsSize='large' className="semi-transparent">
+         <h1>Christopher Chiche<br/><small>Software Engineer</small></h1>
       </Jumbotron>
+   }
+}
+
+class BigButton extends React.Component {
+   render() {
+      return <form action={this.props.link} method="get">
+         <Button type="submit" bsStyle="primary" bsSize="large" block>
+            {this.props.text}
+         </Button>
+      </form>
+   
    }
 }
 
 class About extends React.Component {
    render() {
+      const data = [
+         {
+            title: "EPFL",
+            link: "http://epfl.ch",
+            desc: "Master in Communication Systems in 2013",
+         },
+         {
+            title: "OptumSoft Inc.",
+            link: "http://optumsoft.com",
+            desc: "Software Engineer from 2013 to now.",
+         },
+         {
+            title: "StackOverflow",
+            link: "http://stackoverflow.com/users/1041692/christopher-chiche",
+            desc: "Top 7 answerer in the d3.js tag. Overall reputation over 6000.",
+         },
+         {
+            title: "CLIC student association",
+            link: "http://clic.epfl.ch",
+            desc: "Founder and former president from 2010 to 2012 of the IC factulty student association, at EPFL.",
+         },
+         {
+            title: "Programming",
+            link: "",
+            desc: "Skilled in JavaScript, Python, C++, React.js, d3.js, bash, Scala, Java...",
+         },
+      ]
       return <Panel className="semi-transparent">
-         <h3>About me</h3>
-         <dl>
-            <dt><a href="http://epfl.ch">EPFL</a></dt>
-            <dd>Master in Communication Systems in 2013</dd>
-            <dt><a href="http://optumsoft.com">OptumSoft Inc.</a></dt>
-            <dd>Software Engineer from 2013 to now. </dd>
-            <dt><a href="http://stackoverflow.com/users/1041692/christopher-chiche">StackOverflow</a></dt>
-            <dd>Top 7 answerer in the d3.js tag. Overall reputation over 6000.</dd>
-            <dt><a href="http://clic.epfl.ch">CLIC student association</a></dt>
-            <dd>Founder and former president from 2010 to 2012 of the IC factulty student association, at EPFL.</dd>
-            <dt><a>Programming</a></dt>
-            <dd>Knows things about JavaScript, Python, C++, React.js, d3.js, bash, Scala, Java...</dd>
-         </dl>
+         <h2>About me</h2>
+         {data.map(d => <div>
+            <h4><a href={d.link}>{d.title}</a></h4>
+            <p>{d.desc}</p>
+         </div>)}
+         <br/>
+         <BigButton link="/data/ChristopherChiche.pdf" text="Get my Resume!"/>
       </Panel>
    }
 }
 
 class Contact extends React.Component {
    render() {
-      const contact = "contact"
-      const website = "christopherchiche.com"
+      const contact = "contact";
+      const website = "christopherchiche.com";
       return <Panel className="semi-transparent">
-         <h3>Find Me Online!</h3>
+         <h2>Find Me Online!</h2>
          <ul className="list-unstyled">
             <li><a href="http://ch.linkedin.com/in/cchiche">LinkedIn</a></li>
             <li><a href="http://stackoverflow.com/users/1041692/christopher-chiche">StackOverflow</a></li>
             <li><a href="https://github.com/chrisjamesc">Github</a></li>
-            <li><a href={"mailto:"+contact+"@"+website}>Email Me</a></li>
          </ul>
+         <BigButton link={"mailto:"+contact+"@"+website} text="Send me an Email!"/>
       </Panel> 
    }
 }

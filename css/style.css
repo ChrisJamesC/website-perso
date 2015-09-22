@@ -1,5 +1,5 @@
 body { 
-  background: url(../images/bg.jpg) no-repeat 80% center fixed; 
+  background: url(../images/bg.png) no-repeat 80% center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -16,3 +16,7 @@ body {
    background-color: rgba(255,255,255,0.7);
    color: inherit;
 } 
+
+h4 {
+   margin-bottom: 2px;
+}
