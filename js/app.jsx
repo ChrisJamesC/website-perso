@@ -12,6 +12,8 @@ class Header extends React.Component {
    render() {
       const style = {
          marginTop: 20,
+         fontSize:'2em',
+         paddingLeft: 20,
       }
       return <Jumbotron style={style} bsSize='large' className="semi-transparent">
          <h1>Christopher Chiche<br/><small>Software Engineer</small></h1>
@@ -61,7 +63,7 @@ class About extends React.Component {
       ]
       return <Panel className="semi-transparent">
          <h2>About me</h2>
-         {data.map(d => <div>
+         {data.map(d => <div key={d.title}>
             <h4><a href={d.link}>{d.title}</a></h4>
             <p>{d.desc}</p>
          </div>)}
