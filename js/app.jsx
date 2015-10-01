@@ -48,7 +48,7 @@ class About extends React.Component {
          {
             title: "StackOverflow",
             link: "http://stackoverflow.com/users/1041692/christopher-chiche",
-            desc: "Top 7 answerer in the d3.js tag. Overall reputation over 6000.",
+            desc: "Top 7 answerer in the d3.js tag. Overall reputation over 7000.",
          },
          {
             title: "CLIC student association",
