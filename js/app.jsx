@@ -38,12 +38,12 @@ class About extends React.Component {
          {
             title: "EPFL",
             link: "http://epfl.ch",
-            desc: "Master in Communication Systems in 2013",
+            desc: "Master in Communication Systems in 2013. Specialization in Signals, Images, and Interfaces",
          },
          {
             title: "OptumSoft Inc.",
             link: "http://optumsoft.com",
-            desc: "Software Engineer from 2013 to now.",
+            desc: "Software Engineer from 2013 to 2015.",
          },
          {
             title: "StackOverflow",
@@ -63,6 +63,8 @@ class About extends React.Component {
       ]
       return <Panel className="semi-transparent">
          <h2>About me</h2>
+         I am currently looking for new opportunities. Feel free to contact me 
+         if you have any exciting challenge you want to discuss! 
          {data.map(d => <div key={d.title}>
             <h4><a href={d.link}>{d.title}</a></h4>
             <p>{d.desc}</p>
@@ -93,7 +95,7 @@ class Source extends React.Component {
    render() {
       return <Panel className="semi-transparent text-center">
          Page Design: <a href="https://github.com/ChrisJamesC/website-perso">Christopher Chiche</a> - 
-         Original Theme: <a href="https://bootswatch.com/readable/">Readable</a> - 
+         Original Theme: <a href="https://bootswatch.com/paper/">Paper</a> - 
          Photo credits: <a href="https://plus.google.com/+LucasVandroux/posts">Lucas Vandroux</a> 
       </Panel>
    }
