@@ -48,7 +48,7 @@ class About extends React.Component {
          {
             title: "StackOverflow",
             link: "http://stackoverflow.com/users/1041692/christopher-chiche",
-            desc: "Top 7 answerer in the d3.js tag. Overall reputation over 7000.",
+            desc: "Top 10 answerer in the d3.js tag. Overall reputation over 7000.",
          },
          {
             title: "CLIC student association",
@@ -91,6 +91,62 @@ class Contact extends React.Component {
    }
 }
 
+class Projects extends React.Component {
+   render() {
+      const data = [
+         {
+            title: "Wikipedia Philosophy game",
+            link: "http://chrisjamesc.pythonanywhere.com/",
+            demo: "https://github.com/ChrisJamesC/wikipediaPhilosophy", 
+            desc: "On Wikipedia, if you click on the first like of a page, and then on the first link of the next, ..., you'll end up on Philosophy with very high chances, you can verify that with this web crowler.",
+         },
+         {
+            title: "Sl.ack",
+            link: "https://github.com/ChrisJamesC/sl.ack",
+            desc: "Receive a Slack notification when a command ran in your terminal finishes its execution.",
+         },
+         {
+            title: "YoDA",
+            link: "https://github.com/ChrisJamesC/yoda",
+            desc: "Receive a Yo notification when a command ran in your terminal finishes its execution.",
+         },
+        {
+            title: "Adopt a Fan", 
+            link: "https://github.com/ChrisJamesC/AdoptAFanSWLausanne", 
+            demo: "http://chrisjamesc.github.io/AdoptAFanSWLausanne/",
+            desc: "Startup weekend project. Create and attend to events around you. The main concept was for sport fans to meet people at events around major events such as the soccer world cup"
+        }, 
+        {
+            title: "React tutorial", 
+            link: "https://github.com/ebu/react-tutorial", 
+            desc: "Base tutorial for a talk I gave at the EBU devcon in Geneva about React and d3.js in front of 50 developers. "
+        }, 
+        {
+            title: "JavaScript fractals", 
+            link: "https://github.com/ChrisJamesC/javascriptFractals", 
+            demo: "http://chrisjamesc.github.io/javascriptFractals/", 
+            desc: "A small school project to explore different kinds of fractals, in the browser"
+        
+        }, 
+        {
+            title: "Personnal website", 
+            link: "https://github.com/ChrisJamesC/website-perso", 
+            demo: "www.christopherchiche.com", 
+            desc: "The source code for this website."
+        }
+      ]
+      return <Panel className="semi-transparent">
+         <h2>Projects</h2>
+         I have worked on some small projects that I'm happy to present here.
+         {data.map(d => <div key={d.title}>
+            <h4><a href={d.link}>{d.title}</a></h4>
+            <p>{d.desc}</p>
+         </div>)}
+         <br/>
+      </Panel>
+   }
+}
+
 class Source extends React.Component {
    render() {
       return <Panel className="semi-transparent text-center">
@@ -108,6 +164,7 @@ class Page extends React.Component {
        <div className="container bodyContainer">
          <Header />
          <About />
+         <Projects />
          <Contact />
        </div>
        <div className="container">
