@@ -47,7 +47,7 @@ const appData = {
         },
     ], 
     aboutButton: {
-        link: "/data/ChristopherChiche.pdf", 
+        link: "data/ChristopherChiche.pdf", 
         text: "Get my Resume!"
     },
     projectHeader: <div>
