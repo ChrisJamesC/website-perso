@@ -23,7 +23,7 @@ const appData = {
         {
             title: "EPFL",
             link: "http://epfl.ch",
-            desc: "Master in Communication Systems in 2013. Specialization in Signals, Images, and Interfaces",
+            desc: "Master in Communication Systems in 2013. Specialization in Signals, Images, and Interfaces.",
         },
         {
             title: "OptumSoft Inc.",
@@ -79,15 +79,14 @@ const appData = {
         }, 
         {
             title: "React tutorial", 
-            source: "https://github.com/ebu/react-tutorial", 
-            link: "http://chrisjamesc–reactTutorial.rhcloud.com", 
+            link: "https://github.com/ebu/react-tutorial", 
             desc: "Base tutorial for a workshop I animated at the EBU devcon in Geneva about React and d3.js in front of 50 developers. "
         }, 
         {
             title: "JavaScript fractals", 
             source: "https://github.com/ChrisJamesC/javascriptFractals", 
             link: "http://chrisjamesc.github.io/javascriptFractals/", 
-            desc: "A small school project to explore different kinds of fractals, in the browser "
+            desc: "A small school project to explore different kinds of fractals, in the browser. "
         }, 
         {
             title: "Personnal website", 
