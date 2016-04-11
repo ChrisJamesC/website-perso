@@ -74,8 +74,8 @@ const appData = {
         {
             title: "Adopt a Fan", 
             source: "https://github.com/ChrisJamesC/AdoptAFanSWLausanne", 
-            link: "http://chrisjamesc.github.io/AdoptAFanSWLausanne/",
-            desc: "Startup weekend project. Create and attend to events around you. The main concept was for sport fans to meet people at events around major events such as the soccer world cup. "
+            link: "http://chrisjamesc.github.io/AdoptAFanSWLausanne/", 
+            desc: "A proof of concept website built with a friend during a startup weekend (48h). The goal is to organize activities between fans around majar sport events locations."
         }, 
         {
             title: "React tutorial", 
