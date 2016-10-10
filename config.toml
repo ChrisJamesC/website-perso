@@ -1,5 +1,5 @@
 # Page settings
-baseurl = "http://christopherchiche.com"
+baseurl = "http://christopherchiche.com/"
 languageCode = "en-us"
 title = "Christopher Chiche Resume"
 theme = "hugo-orbit-theme"
