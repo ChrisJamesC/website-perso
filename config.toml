@@ -1,0 +1,237 @@
+# Page settings
+baseurl = "http://replace-this-with-your-hugo-site.com/"
+languageCode = "en-us"
+title = "Christopher Chiche Resume"
+theme = "hugo-orbit-theme"
+# googleAnalytics = "UA-XXXXXXX-Y"
+
+# Do not build files for websites. Need them? Set to false
+disableRSS = true
+disableSitemap = true
+disable404 = true
+uglyurl = true
+
+[params]
+
+# Meta
+    description = "Christopher Chiche"
+    author = "Christopher Chiche"
+
+# Theme styles
+
+    # The original template comes with 6 colour schemes. You may choose styles below.
+    # "styles.css" "styles-2.css", "styles-3.css", "styles-4.css", "styles-5.css", "styles-6.css"
+    # are available. Also the source LESS files are included so
+    # it’s quick and easy to change the styling and colour scheme.
+
+    styles = "styles.css"
+
+# Sidebar sections
+
+    # Profile section
+    [params.profile]
+        name = "Christopher Chiche"
+        tagline = "Full Stack Software Engineer"
+        avatar = "chris_round.png"
+        resume = "/resume/christopher_chiche.pdf"
+
+    # Contact section
+    [params.contact]
+        enable = true
+
+        [[params.contact.list]]
+        class = "email"
+        icon = "fa-envelope"
+        title = "contact [at] christopherchiche [dot] com"
+
+        [[params.contact.list]]
+        class = "website"
+        icon = "fa-globe"
+        url = "//christopherchiche.com"
+        title = "christopherchiche.com"
+
+        [[params.contact.list]]
+        class = "linkedin"
+        icon = "fa-linkedin"
+        url = "//linkedin.com/in/cchiche"
+        title = "linkedin.com/in/cchiche"
+
+        [[params.contact.list]]
+        class = "github"
+        icon = "fa-github"
+        url = "//github.com/chrisjamesc"
+        title = "github.com/chrisjamesc"
+
+        [[params.contact.list]]
+        class = "stackoverflow"
+        icon = "fa-stack-overflow"
+        url = "//stackoverflow.com/users/1041692/christopher-chiche"
+        title = "stackoverflow"
+
+    # Education section
+    [params.education]
+        enable = true
+        title = "Education"
+
+        [[params.education.list]]
+        degree = "MSc in Communication Systems"
+        college = "EPFL - Switzerland"
+        dates = "2011 - 2013"
+
+        [[params.education.list]]
+        degree = "BSc in Communication Systems"
+        college = "EPFL - Switzerland"
+        dates = "2009 - 2011"
+
+    # Languages section
+    [params.languages]
+        enable = true
+        title = "Languages"
+
+        [[params.languages.list]]
+        language = "French"
+        level = "Native"
+
+        [[params.languages.list]]
+        language = "English"
+        level = "Professional"
+
+    # Interests section
+    [params.interests]
+        enable = true
+        title = "Interests"
+
+        [[params.interests.list]]
+        interest = "Entrepreneurship"
+
+        [[params.interests.list]]
+        interest = "Climbing"
+
+        [[params.interests.list]]
+        interest = "Snowboarding"
+
+# Main body sections
+
+    # You may use markdown in summary, details and intro fields. But don't overdose, it's resume!:)
+
+    # Summary section
+    [params.summary]
+        enable = true
+        icon = "fa-user"
+        title = "Career Profile"
+        summary = "I am currently looking for new opportunities. Feel free to contact me if you have any exciting challenge you want to discuss!"
+
+    # Experiences section
+    [params.experiences]
+        enable = true
+        icon = "fa-briefcase"
+        title = "Experiences"
+
+        [[params.jobs.list]]
+        position = "Software Engineer"
+        dates = "2016 - present"
+        company = "28msec"
+        details = "Create from scratch and maintain the whole front-end stack using libraries and services such as react, redux, immutablejs, circleci, saucelabs..."
+
+        [[params.jobs.list]]
+        position = "Software Engineer"
+        dates = "2013 - 2015"
+        company = "OptumSoft Inc."
+        details = "Lead the front-end strategy development as well as contribute to the distributed sytems language and framework."
+
+        [[params.jobs.list]]
+        position = "Contributor"
+        dates = "2012 - present"
+        company = "StackOverflow"
+        details = "Top 10 answerer in the d3.js tag. Overall reputation over 8000."
+
+        [[params.jobs.list]]
+        position = "Founder and president"
+        dates = "2010 - 2012"
+        company = "CLIC student association"
+        details = "IC factulty student association, at EPFL."
+
+    # Projects section
+    [params.projects]
+        enable = true
+        icon = "fa-archive"
+        title = "Projects"
+        intro = "I enjoy creating small projects during my spare time."
+
+        [[params.projects.list]]
+        title = "Wikipedia Philosophy game"
+        url = "https://github.com/ChrisJamesC/wikipediaPhilosophy"
+        tagline = "On Wikipedia, if you click on the first like of a page, and then on the first link of the next, ..., you'll end up on Philosophy with very high chances, you can verify that with this web crowler. "
+
+        [[params.projects.list]]
+        title = "Sl.ack"
+        url = "https://github.com/ChrisJamesC/sl.ack"
+        tagline = "Receive a Slack notification when a command ran in your terminal finishes its execution."
+
+        [[params.projects.list]]
+        title = "YoDA"
+        url = "https://github.com/ChrisJamesC/yoda"
+        tagline = "Receive a Yo notification when a command ran in your terminal finishes its execution."
+
+        [[params.projects.list]]
+        title = "Adopt a Fan"
+        url = "https://github.com/ChrisJamesC/AdoptAFanSWLausanne"
+        tagline = "A proof of concept website built with a friend during a startup weekend (48h). The goal is to organize activities between fans around major sport event locations."
+
+        [[params.projects.list]]
+        title = "React tutorial"
+        url = "https://github.com/ebu/react-tutorial"
+        tagline = "Base tutorial for a workshop I animated at the EBU devcon in Geneva about React and d3.js in front of 50 developers. "
+
+        [[params.projects.list]]
+        title = "JavaScript fractals"
+        url = "https://github.com/ChrisJamesC/javascriptFractals"
+        tagline = "A small school project to explore different kinds of fractals, in the browser. "
+
+        [[params.projects.list]]
+        title = "Personnal website"
+        url = "https://github.com/ChrisJamesC/website-perso"
+        tagline = "The source code for this website. "
+
+
+    # Skills section
+    [params.skills]
+        enable = true
+        icon = "fa-rocket"
+        title = "Skills & Proficiency"
+
+        [[params.skills.list]]
+        skill = "Javascript & Node.js"
+        level = "98%"
+
+        [[params.skills.list]]
+        skill = "React & Redux"
+        level = "95%"
+
+        [[params.skills.list]]
+        skill = "HTML5 & CSS"
+        level = "95%"
+
+        [[params.skills.list]]
+        skill = "Python"
+        level = "90%"
+
+        [[params.skills.list]]
+        skill = "C++"
+        level = "70%"
+
+        [[params.skills.list]]
+        skill = "Java & Scala"
+        level = "70%"
+
+    # Footer section
+
+    # The original template is released under the Creative Commons Attribution 3.0 License.
+    # Please keep the original attribution link when using for your own project.
+    # If you'd like to use the template without the attribution,
+    # you can check out other license options via template author's website: themes.3rdwavemedia.com
+    #
+    # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
+
+    [params.footer]
+        copyright = "Christopher Chiche"
