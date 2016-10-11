@@ -118,8 +118,19 @@ uglyurl = true
     [params.summary]
         enable = true
         icon = "fa-user"
-        title = "Career Profile"
-        summary = "I am currently looking for new opportunities. Feel free to contact me if you have any exciting challenge you want to discuss!"
+        title = "About me"
+        summary = """I am a software engineer with a master degree in Communication Systems from EPFL, specialised in signals, images and interfaces.
+
+I have worked remotely for a startup called OptumSoft based in the Silicon Valley for 2 years. On top of my extensive work in distributed systems design, I have elaborated the strategy to add front-end experience to the backend-based product and brought new team members in this project along the way. This move enabled the company to get in a more suitable shape to launch a product to market.
+
+I have now joined 28msec where I am creating a new front-end from scratch by using the latest technologies. My role goes from defining the roadmap for the product to implementing it.
+
+From a personal standpoint I enjoy working with the latest technologies in order to design new products that have the power to revolutionise an industry. I am currently working with front-end technologies but have previously have had no issues with taking on subjects such as distributed systems, programming language design or more recently, chatbots.
+
+In the future, in order to have more impact on the projects I am working on, I would like to get closer to product ownership and product design positions. I am thus looking forward to companies which can give me a path to such a career.
+
+I am a tolerant and social person who enjoys bonding with my team and creating a joyful environment around me. I take ownership of my projects and don't hesitate to take on tasks that can help grow the company.
+"""
 
     # Experiences section
     [params.experiences]
