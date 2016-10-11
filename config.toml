@@ -45,12 +45,6 @@ uglyurl = true
         title = "contact [at] christopherchiche [dot] com"
 
         [[params.contact.list]]
-        class = "website"
-        icon = "fa-globe"
-        url = "//christopherchiche.com"
-        title = "christopherchiche.com"
-
-        [[params.contact.list]]
         class = "linkedin"
         icon = "fa-linkedin"
         url = "//linkedin.com/in/cchiche"
