@@ -1,7 +1,7 @@
 # Page settings
 baseurl = "http://christopherchiche.com/"
 languageCode = "en-us"
-title = "Christopher Chiche Resume"
+title = "Christopher Chiche"
 theme = "hugo-orbit-theme"
 # googleAnalytics = "UA-XXXXXXX-Y"
 
@@ -166,7 +166,7 @@ I am a tolerant and social person who enjoys bonding with my team and creating a
         [[params.projects.list]]
         title = "Wikipedia Philosophy game"
         url = "https://github.com/ChrisJamesC/wikipediaPhilosophy"
-        tagline = "On Wikipedia, if you click on the first like of a page, and then on the first link of the next, ..., you'll end up on Philosophy with very high chances, you can verify that with this web crowler. "
+        tagline = "On Wikipedia, if you click on the first link of a page, and then on the first link of the next, ..., you'll end up on Philosophy with very high chances, you can verify that with this web crawler. "
 
         [[params.projects.list]]
         title = "Sl.ack"
@@ -194,7 +194,7 @@ I am a tolerant and social person who enjoys bonding with my team and creating a
         tagline = "A small school project to explore different kinds of fractals, in the browser. "
 
         [[params.projects.list]]
-        title = "Personnal website"
+        title = "Personal website"
         url = "https://github.com/ChrisJamesC/website-perso"
         tagline = "The source code for this website. "
 
