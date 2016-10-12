@@ -136,24 +136,28 @@ I am a tolerant and social person who enjoys bonding with my team and creating a
         position = "Software Engineer"
         dates = "2016 - present"
         company = "28msec"
+        url = "//www.28.io"
         details = "Create from scratch and maintain the whole front-end stack using libraries and services such as react, redux, immutablejs, circleci, saucelabs..."
 
         [[params.jobs.list]]
         position = "Software Engineer"
         dates = "2013 - 2015"
         company = "OptumSoft Inc."
+        url = "//www.optumsoft.com"
         details = "Lead the front-end strategy development as well as contribute to the distributed sytems language and framework."
 
         [[params.jobs.list]]
         position = "Contributor"
         dates = "2012 - present"
         company = "StackOverflow"
+        url = "http://stackoverflow.com/tags/d3.js/topusers"
         details = "Top 10 answerer in the d3.js tag. Overall reputation over 8000."
 
         [[params.jobs.list]]
         position = "Founder and president"
         dates = "2010 - 2012"
         company = "CLIC student association"
+        url = "http://clic.epfl.ch"
         details = "IC factulty student association, at EPFL."
 
     # Projects section
