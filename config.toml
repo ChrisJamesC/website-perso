@@ -168,6 +168,16 @@ I am a tolerant and social person who enjoys bonding with my team and creating a
         intro = "I enjoy creating small projects during my spare time."
 
         [[params.projects.list]]
+        title = "React tutorial"
+        url = "https://github.com/ebu/react-tutorial"
+        tagline = "Base tutorial for a workshop I animated at the EBU devcon in Geneva about React and d3.js in front of 50 developers. "
+
+        [[params.projects.list]]
+        title = "Linguobot"
+        url = "https://github.com/ChrisJamesC/languageBot"
+        tagline = "Winner of the Swisscom kickbox price at the Zurich startup weekend 2016. A conversational chatbot that aims at disrupting the language learning industy."
+
+        [[params.projects.list]]
         title = "Wikipedia Philosophy game"
         url = "https://github.com/ChrisJamesC/wikipediaPhilosophy"
         tagline = "On Wikipedia, if you click on the first link of a page, and then on the first link of the next, ..., you'll end up on Philosophy with very high chances, you can verify that with this web crawler. "
@@ -186,11 +196,6 @@ I am a tolerant and social person who enjoys bonding with my team and creating a
         title = "Adopt a Fan"
         url = "https://github.com/ChrisJamesC/AdoptAFanSWLausanne"
         tagline = "A proof of concept website built with a friend during a startup weekend (48h). The goal is to organize activities between fans around major sport event locations."
-
-        [[params.projects.list]]
-        title = "React tutorial"
-        url = "https://github.com/ebu/react-tutorial"
-        tagline = "Base tutorial for a workshop I animated at the EBU devcon in Geneva about React and d3.js in front of 50 developers. "
 
         [[params.projects.list]]
         title = "JavaScript fractals"
