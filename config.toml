@@ -33,7 +33,7 @@ uglyurl = true
         name = "Christopher Chiche"
         tagline = "Full Stack Software Engineer"
         avatar = "chris_round.png"
-        resume = "/resume/christopher_chiche.pdf"
+        resume = "https://www.dropbox.com/s/g072obpvcmpm1ta/Christopher%20Chiche.pdf?dl=0"
 
     # Contact section
     [params.contact]
