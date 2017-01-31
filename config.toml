@@ -168,6 +168,11 @@ I am a tolerant and social person who enjoys bonding with my team and creating a
         intro = "I enjoy creating small projects during my spare time."
 
         [[params.projects.list]]
+        title = "React talk about testing"
+        url = "https://docs.google.com/presentation/d/1eS7Vh0rRdXGLeKURDaRqsovVq9pRYXk0PrP1lIAhN8I/edit?usp=sharing"
+        tagline = "The slides from a talk I did about testing in React and javascript in general, with the latest front-end tools"
+
+        [[params.projects.list]]
         title = "React tutorial"
         url = "https://github.com/ebu/react-tutorial"
         tagline = "Base tutorial for a workshop I animated at the EBU devcon in Geneva about React and d3.js in front of 50 developers. "
