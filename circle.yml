@@ -16,4 +16,4 @@ deployment:
     branch: master
     commands:
       - yarn run build
-      - firebase deploy --token=$FIREBASE_TOKEN --non-interactive --public=/docs
+      - firebase deploy --token=$FIREBASE_TOKEN --non-interactive
