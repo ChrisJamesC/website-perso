@@ -1,0 +1,19 @@
+machine:
+  node:
+    version: v6.1.0
+dependencies:
+  override:
+    - yarn
+  pre:
+    - yarn global add firebase-tools hugo-cli
+  cache_directories:
+    - ~/.cache/yarn
+test:
+  override:
+    - echo "test"
+deployment:
+  release:
+    branch: master
+    commands:
+      - yarn run build
+      - firebase deploy --token=$FIREBASE_TOKEN --non-interactive --public=/docs
