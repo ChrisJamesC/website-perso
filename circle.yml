@@ -15,5 +15,6 @@ deployment:
   release:
     branch: master
     commands:
+      - mkdir -p content
       - yarn run build
       - firebase deploy --token=$FIREBASE_TOKEN --non-interactive
