@@ -5,7 +5,7 @@ dependencies:
   override:
     - yarn
   pre:
-    - yarn global add firebase-tools
+    - yarn global add firebase-tools hugo-cli
   cache_directories:
     - ~/.cache/yarn
 test:
